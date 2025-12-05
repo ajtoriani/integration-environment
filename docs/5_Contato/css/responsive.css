@@ -1,0 +1,93 @@
+/*[GENERAL SETTINGS]*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (max-width: 500px) {
+  .container{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    display:none;
+  }
+}
+
+.navegacao img {
+  max-width: 250px;
+}
+@media (max-width: 500px) {
+  .navegacao img {
+    width: 200px;;
+  }
+}
+
+@media (max-width: 500px) {
+  .uai{
+  margin-top: 35vh;
+  margin-right: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner_1 {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+    margin: 80px auto 0 auto;
+    height: 800px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .linha {
+    flex-direction: column;
+  }
+
+  .botao {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+.banner_2{
+    grid-template-columns: 1fr; /* vira 1 coluna */
+    margin: 80px auto 0 auto;
+    height: 1200px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+.form-container{
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  height: 1100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .linha {
+    flex-direction: column;
+  }
+
+  .botao {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .final-img {
+    display:none;
+  }
+}
+
+@media (max-width: 500px) {
+ .footer-container {
+    display:none;
+  }
+}

@@ -1,0 +1,306 @@
+/*[GENERAL SETTINGS]*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #ece8fd;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1{
+  color: #2b3e56;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b3e56;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #2b3e56;
+  font-size: 1.3rem;
+}
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*[NAVIGATION MENU]*/
+
+.container-header {
+  max-width: 1800px;
+}
+
+header {
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #ece8fd;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+}
+
+.navegacao {
+  margin: 0 auto;
+  max-width: 1800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.navegacao img {
+  max-width: 250px;
+}
+
+
+.uai {
+  margin-top: 30vh;
+}
+
+.menu a {
+  color: #2b3e56;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.menu a:hover {
+  color: #8087f2;
+}
+
+.inicio-linha {
+  text-decoration: underline;
+}
+
+/*[BANNER 1]*/
+
+.banner_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px auto 0px auto;
+  align-items: center;
+  max-width: 1800px;
+  gap: 150px;
+}
+
+.banner_1 .texto {
+  align-self: center;
+  width: 300px;
+}
+
+.banner_1 img {
+  max-width: 100%;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.imagem {
+  position: relative;
+  align-self: center;
+  display: grid;
+  margin-right: 50px;
+}
+
+.fundo {
+  height: 400px;
+    margin-right: 50px;
+}
+
+.smile {
+  position: absolute;
+  z-index: 2;
+  height: 190px;
+  top: 100px;
+  margin-right: 50px;
+}
+
+.detail {
+  align-self: center;
+  position: absolute;
+  height: 350px;
+  top: 90px;
+    margin-right: 50px;
+}
+
+/*[BANNER 2]*/
+
+.banner_2 {
+  align-items: center;
+  margin: 100px auto;
+  max-width: 1350px;
+  align-items: center;
+  background-color: #ece8fd;
+}
+
+.banner_2 img {
+  width: 50px;
+}
+
+.banner_2 p {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.banner_2 .imagem {
+  height: 420px;
+  border-radius: 20px;
+  text-align: center;
+  border: #8087f2 1px solid;
+  background-color: #f4f2ff;
+  justify-content: center;
+}
+
+.agrupamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 150px;
+  padding: 20px 20px;
+}
+
+.agrupamento img {
+  width: 90px;
+}
+.titulo {
+  display: flex;
+justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/*[BANNER 3]*/
+
+.banner_3 {
+  margin: 100px auto 0px auto;
+  align-items: center;
+  justify-self: center;
+  max-width: 1800px;
+  gap: 150px;
+  background-color: #ece8fd;
+}
+
+.banner_3 .texto {
+  max-width: 80ch;
+}
+
+/*[FOOTER]*/
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: #505050;
+  padding-top: 60px;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 2px solid #4ba2e9;
+  flex-wrap: nowrap;
+  gap: 40px;
+  max-width: 1800px;
+}
+
+.footer-container h3 {
+  color: #2b3e56;
+  font-size: 18px;
+}
+
+.esquerda p {
+  max-width: 30ch;
+  margin-top: 10px;
+}
+
+.direita {
+  display: flex;
+}
+
+.direita a {
+  color: #505050;
+  font-size: 15px;
+}
+
+.copy p {
+  color: #505050;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.menuDois li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.final-img {
+  width: 300px;
+}
+
+.cont {
+  text-align: center;
+  padding-top: 40px;
+  background-color: #ece8fd;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.cont h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2b3e56;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+}
+
+#botao:hover {
+  background-color: #4ba2e9;
+}
+
