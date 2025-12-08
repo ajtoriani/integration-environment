@@ -46,8 +46,8 @@
   .banner_1 {
     grid-template-columns: 1fr; /* vira 1 coluna */
     margin: 70px auto 0 auto;
-    gap: 100px;
-        justify-items: center;
+    gap: 80px;
+    justify-items: center;
   }
 }
 
@@ -73,6 +73,12 @@
 }
 
 @media (max-width: 500px) {
+  .banner_1 img{
+   width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
   .banner_2 .texto{
     margin: 0;
     padding: 0;
@@ -82,7 +88,6 @@
 
 @media (max-width: 500px) {
   .banner_2 p{
-    margin-top: 40px;
     font-size: 1.4rem;
   }
 }
