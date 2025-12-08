@@ -142,7 +142,6 @@ header {
   gap: 110px;
   padding: 20px 20px;
   height: 600px;
-  border: 1px solid black;
 }
 
 .banner_1 .texto {
@@ -151,7 +150,6 @@ header {
   margin: 20px 20px;
   max-width: 400px;
   min-width: 300px;
-  border: 1px solid black;
 }
 
 .figura img {
@@ -161,7 +159,6 @@ header {
 
 .banner_1 .figura {
   justify-items: right;
-  border: 1px solid black;
 }
 
 button {
@@ -205,8 +202,7 @@ button {
   padding: 30px;
   border-radius: 20px;
   max-width: 1800px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 16px;
@@ -338,6 +334,7 @@ textarea {
 }
 
 .footer {
+  margin-top: 100px;
   background-color: #f5f5f5;
 }
 
