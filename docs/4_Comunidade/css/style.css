@@ -116,6 +116,7 @@ header {
   gap: 50px;
   padding: 20px 20px;
   height: 600px;
+    border: solid 1px black;
 }
 
 .banner_1 .texto {
@@ -144,14 +145,12 @@ header {
   min-width: 700px;
   height: 700px;
   align-items: center;
-  padding: 60px;
-  color: #2b3e56;
-  background-color: #ece8fd;
+  padding: 40px;
+  border: solid 1px black;
 }
 
 button {
   background-color: #5f67d4;
-  color: white;
   border-radius: 8px;
   width: 240px;
   height: 50px;
@@ -166,10 +165,6 @@ button {
 
 #botao:hover {
   background-color: #4ba2e9;
-}
-
-section {
-  margin: 0px auto;
 }
 
 /*[BANNER 3]*/
@@ -251,13 +246,22 @@ section {
 }
 
 .container4 {
-  background-color: #f4f2ff;
   border-radius: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  background-color: #f4f2ff;
 }
 
 .textoo2 {
-  margin-left: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.textoo2 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textoo2 p{
+  margin: 0;
   text-align: center;
 }
 
@@ -267,7 +271,6 @@ section {
   height:320px;
   padding: 10px 80px;
   justify-content: center;
-
 }
 
 .bta img {
@@ -282,11 +285,11 @@ section {
 .bta1 {
   height: 200px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #ece8fd;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
   margin-top: 30px;
   justify-content: space-between;
   gap: 10px;
@@ -321,39 +324,47 @@ section {
 
 .container5 {
   border-radius: 40px;
-  background-color: #f4f2ff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 1100px;
 }
 
 .textoo3 {
   text-align: center;
+  padding: 20px;
+}
+
+.textoo3 h3{
+  margin: 0;
+  font-size: 2rem;
+}
+
+.textoo3 p{
+  margin: 0;
 }
 
 .quadrado1 {
-  width: 100%;
-  height: 274px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 120px;
+  justify-items: center;
+  padding: 40px;
 }
 
 .quadrado2 {
   justify-self: center;
-  background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  margin-top: 30px;
-  padding: 20px 140px;
-  margin: 50px 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+  padding: 40px 100px;
+  margin: 10px 10px;
+  background-color: #f4f2ff;
 }
 
 .quadrado {
-  background-color: #fff;
-  width: 38%;
-  height: 185px;
+  background-color: #f4f2ff;
+  width: 500px;
+  height: 200px;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  margin-top: 30px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+  padding: 20px;
 }
 
 
@@ -364,7 +375,7 @@ section {
 }
 
 .quadtu {
-  padding-top: 60px;
+
   text-align: center;
   justify-items: center;
 }
@@ -375,6 +386,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  padding: 0 20px;
 }
 
 .quadti img {
@@ -387,14 +399,12 @@ section {
 }
 
 .containerto {
-  margin: 0 auto;
-  width: 400px;
-  height: 70px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   margin-top: 20px;
   gap: 30px;
+    padding: 0 80px;
 }
 
 .botassi {
@@ -406,6 +416,7 @@ section {
   background-color: #8087f2;
   border-radius: 15px;
   margin: 70px 30px;
+  display: none;
 }
 
 .botassin {
@@ -436,11 +447,22 @@ section {
 
 .plano {
   margin: 0 auto;
-  width: 437px;
-  height: 60px;
-  display: flex;
+  width: 300px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+}
+
+.plano p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.ofertas {
+  padding: 0 10px;
 }
 
 .bum {
@@ -470,124 +492,124 @@ section {
 }
 
 .plano-botao3 {
-  border: solid 1px black;
-  padding: 20px;
-  margin-top: 60px;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 .planodois {
   margin: 0px auto;
-  max-width: 1500px;
+  max-width: 1000px;
   margin: 0px auto 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  padding: 10px 30px;
 }
 
 .tudo {
   padding: 20px;
-  width: 300px;
+  width: 250px;
   background-color: #f4f2ff;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  height: 550px;
+  height: 280px;
   gap: 40px;
 }
 
+
 .major ul li{
   text-align: center;
-  font-size: 0.9rem;
-}
-
-.major {
-  padding-top: 10px;
+  font-size: 0.7rem;
+  color: #2b3e56;
+  text-align: left;
 }
 
 .divul ul {
   padding-left: 0;
   display: grid;
-  margin-top: 20px;
+  text-align: left;
+  justify-items: baseline;
 }
 
-.divul li {
-  margin: 0 auto;
-  text-align: left;
+.ofertas ul {
+  margin:0;
 }
 
 .tudo h6{
   margin: 0;
+  text-align: center;
+  font-size: 1rem;
 }
-.tudo p,
-h6,
-h3 {
+
+.tudo h3{
+  margin: 0;
+  font-size: 1.1rem;
   text-align: center;
 }
 
 .tudo p {
   color: #505050;
-  font-size: 1rem;
+  font-size: 0.6rem;
+  text-align: center;
 }
 
 .bhj {
   margin: 0px auto;
-  width: 272px;
-  height: 50px;
+  width: 220px;
+  height: 35px;
   background-color: #8087f2;
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
 }
 
 .bhj a {
-  font-size: 22px;
+  font-size: 1rem;
   align-self: center;
   color: #fff;
 }
 
 .plano-botao1 {
-  border: solid 1px black;
-  padding: 20px;
-  margin-top: 80px;
-}
-
-.plano-botao2 {
-  border: solid 1px black;
-  padding: 20px;
+  padding: 10px;
   margin-top: 40px;
 }
 
+.plano-botao2 {
+  padding: 10px;
+  margin-top: 5px;
+}
 
 
 .banner_3 {
   align-items: center;
-  margin: 50px auto 0px auto;
+  margin: 0px auto 0px auto;
   max-width: 1500px;
   align-items: center;
-  padding: 20px 20px;
+  padding: 40px;
   gap: 10px;
 }
 
 .majorp {
-  margin-top: 10px;
+  font-size: 5rem;
   font-weight: bold;
 }
 
 .banner_4 {
   align-items: center;
-  margin: 80px auto 0px auto;
+  margin: 40px auto 0px auto;
   max-width: 1500px;
-  padding: 20px 20px;
   background-color: #ece8fd;
   gap: 10px;
+  padding: 40px 40px;
 }
 
 .banner_5 {
   align-items: center;
   margin: 0 auto;
   background-color: #e6fcfe;
-  height: 600px;
+  height: 900px;
   max-width: 1500px;
   align-items: center;
   padding: 60px;
