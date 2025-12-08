@@ -26,16 +26,17 @@
 
     <!--T1.1 = START [NAVIGATION MENU]-->
 
-    <header>
+    <header id="header">
         <div class="navegacao">
 
-          <div class="logo">
+          <div class="logo" id="logo">
             <a href="./index.html"
               ><img src="img/logo_name.svg" alt="Logo CalmaMente"
             /></a>
           </div>
           
-          <nav>
+          <nav id="menu">
+            <button id="btn-mobile" class="hamburguer"> <img src="./img/hambuguer.svg" alt=""></button>
             <ul class="menu">
               <li>
                 <span class="inicio-linha">
@@ -46,7 +47,19 @@
               <li><a href="./4_Comunidade/comunidade.html">Comunidade</a></li>
               <li><a href="./5_Contato/contato.html">Contato</a></li>
             </ul>
+
+            <ul id="menu-mobile">
+              <li>
+                <span class="inicio-linha">
+                  <a href="index.html">Início</a></span>
+              </li>
+              <li><a href="./2_Sobre/sobre.html">Sobre</a></li>
+              <li><a href="./3_Recursos/recursos.html">Recursos</a></li>
+              <li><a href="./4_Comunidade/comunidade.html">Comunidade</a></li>
+              <li><a href="./5_Contato/contato.html">Contato</a></li>
+            </ul>
           </nav>
+
 
         </div>
     </header>
@@ -101,7 +114,7 @@
               <p>
                 Respire fundo, desacelere e descubra um espaço feito para você.
               </p>
-              <a href="/2_Sobre/sobre.html">
+              <a href="./2_Sobre/sobre.html">
                 <button type="submit" class="botao" id="botao">
                   Conhecer mais
                 </button></a
@@ -138,7 +151,7 @@
                 />
                 <p>Citações</p>
               </div>
-              <div class="imagem-Dois">
+              <div class="imagem-fone">
                 <img
                   src="img/index_banner3.3.png"
                   alt="Fone de ouvido com ondas sonoras e notas musicais para representar playlisys"
@@ -147,7 +160,7 @@
               </div>
             </div>
             <div>
-              <a href="/3_Recursos/recursos.html" class="botao">
+              <a href="./3_Recursos/recursos.html" class="botao">
                 <button type="submit" id="botao">Explorar recursos</button></a
               >
             </div>
@@ -164,8 +177,7 @@
             <div class="texto">
               <h2>Comunidade</h2>
               <p>Um espaço seguro para trocar apoio e crescer juntos.</p>
-              <p></p>
-              <a href="/4_Comunidade/comunidade.html" class="botao"
+              <a href="./4_Comunidade/comunidade.html" class="botao"
                 ><button type="submit" id="botao">Conhecer mais</button></a
               >
             </div>
@@ -202,7 +214,7 @@
                 Venha fazer parte desse movimento por uma mente mais leve e um
                 futuro mais consciente.
               </p>
-              <a href="/5_Contato/contato.html" class="botao"
+              <a href="./5_Contato/contato.html" class="botao"
                 ><button type="submit" id="botao">Conhecer mais</button></a
               >
             </div>

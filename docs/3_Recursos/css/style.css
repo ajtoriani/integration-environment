@@ -25,6 +25,7 @@ img {
 
 h1{
   color: #2b3e56;
+  font-size:2rem;
 }
 
 h2,
@@ -42,15 +43,21 @@ p {
 }
 
 .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*[NAVIGATION MENU]*/
+
+.container-header {
+  max-width: 1500px;
 }
 
 header {
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: #ece8fd;
+  background-color: #f5f5f5;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -58,11 +65,12 @@ header {
 
 .navegacao {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  height: 50px;
 }
 
 .menu {
@@ -70,8 +78,13 @@ header {
   gap: 40px;
 }
 
+.navegacao ul {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .navegacao img {
-  max-width: 250px;
+  max-width: 220px;
 }
 
 
@@ -82,7 +95,7 @@ header {
 .menu a {
   color: #2b3e56;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .menu a:hover {
@@ -93,76 +106,71 @@ header {
   text-decoration: underline;
 }
 
+#btn-mobile{
+  display: none;
+}
+
+#menu-mobile{
+  display: none;
+}
+
+
 /*[BANNER 1]*/
 
 .banner_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  max-width: 1800px;
-  gap: 110px;
-  background-color: #ece8fd;
+  justify-self: center;
+  max-width: 1500px;
+  gap: 80px;
+  padding: 20px 20px;
+  height: 600px;
+
 }
 
 .banner_1 .texto {
   align-self: center;
-  width: 450px;
-}
-
-.banner_1 p {
-  padding: 10px 0;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  min-width: 400px;
 }
 
 .banner_1 img {
-  max-width: 100%;
-  width: 400px;
-  margin-top: 20px;
+  max-width: 500px;
+  display: block;
 }
 
-.containerTextoPrincipal {
-  max-width: 1800px;
-  margin-top: 80px;
-}
-
-.containerImagem_1 {
-  justify-items: center;
+.banner_1 .img-comunidade {
+    justify-items:center;
 }
 
 
 
 /*[BANNER 2]*/
 
-.banner_2,
-.banner_3,
-.banner_4 {
-  margin: 0 auto;
-}
-
 .banner_2 {
-  margin: 100px auto 0px auto;
+  margin: 80px auto 0px auto;
   align-items: center;
-  justify-self: center;
+  justify-items: center;
+  max-width: 1500px;
   gap: 150px;
-  background-color: #ece8fd;
 }
 
-.banner_2 .bannerLimiteTamanho {
-  margin-top: 100px;
-}
 
 .bannerLimiteTamanho {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 400px;
+  max-width: 1200px;
   background-color: #f4f2ff;
   border-radius: 40px;
   padding: 16px 126px 30px;
   gap: 40px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
 }
 
 .banner_2 * {
@@ -193,21 +201,23 @@ header {
 /*[BANNER 3]*/
 
 .banner_3 {
-  margin: 100px auto 0px auto;
+  margin: 80px auto 0px auto;
   align-items: center;
   justify-content: center;
-  max-width: 1196px;
+  max-width: 1500px;
   gap: 150px;
 }
 
 .bannerLimiteTamanho2 {
   display: flex;
-  height: 400px;
+  height: 380px;
+  max-width: 1200px;
   background-color: #f4f2ff;
   border-radius: 40px;
   padding: 16px 126px 30px;
   gap: 40px;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
 }
 
 .banner_3 img {
@@ -274,10 +284,10 @@ header {
 }
 
 .banner_4 {
-  margin: 100px auto 0px auto;
+  margin: 80px auto 0px auto;
   align-items: center;
   justify-content: center;
-  max-width: 1196px;
+  max-width: 1500px;
   gap: 150px;
   background-color: #ece8fd;
 }
@@ -286,20 +296,20 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  height: 450px;
+  height: 480px;
+  max-width: 1200px;
   background-color: #f4f2ff;
   border-radius: 40px;
+  padding: 16px 30px 30px;
   gap: 40px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
-  align-items: center;
 }
 
 #textoCitacao {
   word-spacing: 0px;
   text-align: justify;
-  padding: 20px;
+  padding: 10px 40px;
 }
 
 .containerCitacao,
@@ -315,7 +325,6 @@ header {
   align-items: center;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
 }
 
 .containerCitacao h2,
@@ -396,7 +405,7 @@ p {
   border-bottom: 2px solid #4ba2e9;
   flex-wrap: nowrap;
   gap: 40px;
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 .footer-container h3 {
@@ -406,6 +415,7 @@ p {
 
 .footer {
   margin-top: 100px;
+  background-color: #f5f5f5;
 }
 
 .esquerda p {
@@ -472,4 +482,22 @@ p {
 
 #botao:hover {
   background-color: #4ba2e9;
+}
+
+
+#btn-mobile{
+   background-color: #5f67d4;
+  color: white;
+  border-radius: 8px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ #btn-mobile img {
+  width: 30px; 
+  height: auto; 
 }

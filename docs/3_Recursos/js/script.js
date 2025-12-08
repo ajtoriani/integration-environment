@@ -162,6 +162,16 @@ gsap.from(".container .container-images-banner3", {
 
     textoExpirar.style.opacity = 0;
 
+    Object.keys(citacoesPorSentimento).forEach(sentimento => {
+      const elementoSentimento = document.getElementById(sentimento);
+      if (elementoSentimento) {
+        elementoSentimento.addEventListener('click', () => {
+          atualizarCitacao(sentimento);
+        });
+      }
+    });
+
+
     let tl = null; 
     let isRunning = false; 
 
@@ -230,3 +240,13 @@ gsap.from(".container .container-images-banner3", {
     criarAnimacaoRespiracao();
 });
 
+//menu hamburguer
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
+}
+
+btnMobile.addEventListener('click', toggleMenu);

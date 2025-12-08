@@ -63,3 +63,14 @@ gsap.to(gira, {
   duration:5,
   ease:"none"
 })
+
+//menu hamburguer
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
+}
+
+btnMobile.addEventListener('click', toggleMenu);

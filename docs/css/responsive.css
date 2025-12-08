@@ -10,15 +10,26 @@
   }
 }
 
+/*[NAVIGATION MENU]*/
+
 @media (max-width: 500px) {
   .menu a {
     display: none;
   }
 }
 
+@media (max-width: 500px){
+  #btn-menu {
+    display: block;
+  }
+  .menu{
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .navegacao img {
-    width: 200px;;
+    width: 200px;
   }
 }
 
@@ -34,21 +45,24 @@
 @media (max-width: 500px) {
   .banner_1 {
     grid-template-columns: 1fr; /* vira 1 coluna */
-    margin: 80px auto 0 auto;
-    height: 600px;
-    gap: 10px;
+    margin: 70px auto 0 auto;
+    gap: 100px;
+        justify-items: center;
   }
 }
 
-.banner_1 .texto {
-  align-self: center;
-  max-width: 450px;
-}
 
 @media (max-width: 500px) {
   .banner_1 .texto h1{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner_1 .texto{
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -58,24 +72,28 @@
   }
 }
 
+@media (max-width: 500px) {
+  .banner_2 .texto{
+    margin: 0;
+    padding: 0;
+  }
+}
+
 
 @media (max-width: 500px) {
-  .banner_2 .botao {
+  .banner_2 p{
+    margin-top: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+#botao {
   background-color: #5f67d4;
   height: 40px;
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 0%;
-  }
-}
-
-@media (max-width: 500px) {
-.button {
-  background-color: #2b3e56;;
-  height: 40px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 0%;
   }
 }
 
@@ -87,7 +105,12 @@
 
   .botao {
     align-self: center;
-    width: 100%;
+    display: block;
+    justify-self: center;
+  }
+
+  button{
+    font-size: 20px;
   }
 }
 
@@ -96,7 +119,6 @@
   .banner_2 {
     grid-template-columns: 1fr; /* vira 1 coluna */
     margin: 10px auto 0 auto;
-    height: 400px;
   }
 }
 
@@ -118,19 +140,11 @@
 }
 
 @media (max-width: 500px) {
-  .banner_2 .texto {
-    margin-left: 15px;
-    max-width: 30ch;
-  }
-}
-
-@media (max-width: 500px) {
   .banner_3 {
-    grid-template-columns: 1fr; /* vira 1 coluna */
-    margin-top: 80px auto 0 auto;
-    height: 830px;
+    grid-template-columns: 1fr; 
     display: flex;
     flex-direction: column;
+    margin: 10px auto 0 auto;
   }
 }
 
@@ -147,41 +161,67 @@
 
 @media (max-width: 500px) {
   .banner_3 h2{
-    text-align:left;
-    font-size: 1.2rem;
+    text-align:center;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 500px) {
   .banner_4 {
-    margin: 220px auto 0 auto;
-    height: 600px;
-    gap: 60px;
+    gap: 5px;
     display: flex;
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
+    justify-self: center;
+    justify-content:center;
+    margin: 10px auto 0 auto;
+
+  }
+  .banner_4 .texto{
+    display: block;
+    justify-self: center;
+    text-align: center;
+        border: 2px solid red;
+        margin: 0;
+        padding: 0;
+  }
+
+  .banner_4 h2{
+    font-size: 1.8rem;
+     text-align: center;
   }
 }
 
 @media (max-width: 500px) {
   .banner_4 img {
     width: 100%;
+    margin-top: 0;
   }
 }
 
 
 @media (max-width: 500px) {
   .banner_5 {
-    grid-template-columns: 1fr; /* vira 1 coluna */
-    gap: 40px; /* diminui o espaço */
-    margin: 60px auto;
+    grid-template-columns: 1fr;
+    gap: 10px; 
+    margin: 10px auto;
+    justify-self: center;
   }
 }
 
 
 @media (max-width: 500px) {
   .banner_5 .texto {
-    margin-left: 15px;
-    max-width: 30ch;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+  }
+  .banner_5 h2{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .banner_5 p{
+    text-align: center;
   }
 }
 
@@ -197,4 +237,64 @@
   }
 }
 
+/* menu hamburguer*/
+@media (max-width: 500px) { 
+    
+    .menu {
+        display: none; /* Esconde o menu desktop */
+    }
+
+    .navegacao {
+       
+        padding: 10px 20px;
+    }
+
+    
+    #btn-mobile {
+        display: block; 
+        z-index: 3000;
+    }
+
+   
+    #menu-mobile {
+        display: block;
+        position: fixed;
+        right: -500%; 
+        background-color: #ece8fd; 
+        width: 100%;
+        height: calc(100vh - 75px); 
+        transition: right 0.3s ease-in-out;
+        z-index: 2000;
+    }
+  
+    #menu-mobile.ativo {
+        right: 0; 
+    }
+
+
+    #menu-mobile ul {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        gap: 0px; 
+        width: 100%;
+    }
+    
+    
+    #menu-mobile  li {
+        border-bottom: 1px solid #ddd;
+    }
+
+    #menu-mobile li a {
+        padding: 15px 0;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    
+    .inicio-linha {
+        text-decoration: none; 
+        border-left: 4px solid #5f67d4; 
+        display: block;    }
+}
 

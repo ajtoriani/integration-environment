@@ -140,14 +140,12 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 200px;
-  height: 1000px;
+  height: 650px;
   background-color: #f4f2ff;
   border-radius: 20px;
   text-align: center;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
   border: #8087f2 1px solid;
-  width: 320px;
-  padding: 10px;
   }
 }
 
@@ -155,21 +153,13 @@
 .banner_3 .bannerLimiteTamanho2{
   text-align: center;
   padding: 0;
-  gap: 10px;
   margin-top: 0;
 border-radius: 15px;
-  height: 600px;
   border: none;
   box-shadow: none;
   }
 }
 
-@media (max-width: 500px) {
-.banner_3 .bannerLimiteTamanho2 div{
-  height: 180px;
-  margin-top: 30px;
-  }
-}
 
 
 @media (max-width: 500px) {
@@ -178,18 +168,26 @@ border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   }
+  .exercicioRespiracao h2{
+    margin: 0;
+  }
 }
 
 @media (max-width: 500px) {
 .exercicioRespiracao img{
-  width: 150px;
+  width: 200px;
   margin-left: 50px;
   margin-top: 0;
+  }
+
+  .containerExerciciosInterativo{
+    gap: 0;
   }
 }
 @media (max-width: 500px) {
 .exercicioRespiracao h2{
   padding: 0;
+  margin-top: 0;
   }
 }
 
@@ -205,9 +203,9 @@ border-radius: 15px;
 .banner_4 .bannerLimiteTamanho3{
   display: flex;
   flex-direction: column;
-  height: 1500px;
+  height: 1350px;
   border: none;
-  gap: 150px;
+  gap: 100px;
   justify-content: center;
   box-shadow:none;
   border-radius: 15px;
@@ -253,4 +251,68 @@ border-radius: 15px;
   .cont {
     display:none;
   }
+}
+
+/* menu hamburguer*/
+@media (max-width: 500px) { 
+    
+    .menu {
+        display: none; /* Esconde o menu desktop */
+    }
+
+    .navegacao {
+       
+        padding: 10px 20px;
+    }
+
+    
+    #btn-mobile {
+        display: block; 
+        z-index: 3000;
+    }
+
+   
+    #menu-mobile {
+        display: block;
+        position: fixed;
+        right: -500%; 
+        top: 75px; 
+        background-color: #ece8fd; 
+        width: 100%;
+        height: calc(100vh - 75px); 
+        transition: right 0.3s ease-in-out;
+        z-index: 2000;
+    }
+  
+    #menu-mobile.ativo {
+        right: 0; 
+    }
+
+
+    #menu-mobile ul {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        gap: 0px; 
+        width: 100%;
+    }
+    
+    
+    #menu-mobile  li {
+        border-bottom: 1px solid #ddd;
+        
+    }
+
+    #menu-mobile li a {
+        padding: 15px 0;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    
+    .inicio-linha {
+        text-decoration: none; 
+        border-left: 4px solid #5f67d4; 
+        display: block;
+    }
 }

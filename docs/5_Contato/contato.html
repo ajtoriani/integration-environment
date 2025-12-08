@@ -25,16 +25,31 @@
   <body>
     <!--T1.1 = START [NAVIGATION MENU]-->
 
-    <header>
+    <header id="header">
       <div class="navegacao">
         <div class="logo">
           <a href="../index.html"
-            ><img src="img/logo_name.svg" alt="Logo CalmaMente"
+            ><img src="./img/logo_name.svg" alt="Logo CalmaMente"
           /></a>
         </div>
 
-        <nav>
+        <nav id="menu">
+          <button id="btn-mobile" class="hamburguer"> <img src="./img/menu.svg" alt=""></button>
           <ul class="menu">
+            <li>
+              <a href="../index.html">Início</a>
+            </li>
+            <li><a href="../2_Sobre/sobre.html">Sobre</a></li>
+            <li><a href="../3_Recursos/recursos.html">Recursos</a></li>
+            <li><a href="../4_Comunidade/comunidade.html">Comunidade</a></li>
+            <li>
+              <span class="inicio-linha">
+                <a href="./contato.html">Contato</a>
+              </span>
+            </li>
+          </ul>
+
+          <ul id="menu-mobile">
             <li>
               <a href="../index.html">Início</a>
             </li>

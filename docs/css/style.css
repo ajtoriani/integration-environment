@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -47,21 +43,21 @@ p {
 }
 
 .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*[NAVIGATION MENU]*/
 
 .container-header {
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 header {
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: #ece8fd;
+  background-color: #f5f5f5;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -69,11 +65,12 @@ header {
 
 .navegacao {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  height: 50px;
 }
 
 .menu {
@@ -81,8 +78,13 @@ header {
   gap: 40px;
 }
 
+.navegacao ul {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .navegacao img {
-  max-width: 250px;
+  max-width: 220px;
 }
 
 .uai {
@@ -92,7 +94,7 @@ header {
 .menu a {
   color: #2b3e56;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .menu a:hover {
@@ -103,57 +105,55 @@ header {
   text-decoration: underline;
 }
 
+#btn-mobile{
+  display: none;
+}
+
+#menu-mobile{
+  display: none;
+}
 /*[BANNER 1]*/
 
 .banner_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  max-width: 1800px;
-  gap: 110px;
+  max-width: 1500px;
+  gap: 150px;
+  padding: 20px 20px;
+  height: 600px;
 }
 
 .banner_1 .texto {
   align-self: center;
-  max-width: 450px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  max-width: 400px;
+  min-width: 300px;
 }
 
-.banner_1 img {
-  max-width: 100%;
-  width: 550px;
-  margin-top: 20px;
+.banner_1 img{
+  max-width: 500px;
   display: block;
 }
 
-button {
-  background-color: #5f67d4;
-  color: white;
-  border-radius: 8px;
-  width: 240px;
-  height: 50px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.banner_1 .imagem {
+  justify-items:center;
 }
 
-
-.botao:hover {
-  background-color: #4ba2e9;
-}
 
 /*[BANNER 2]*/
 
 .banner_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  max-width: 1800px;
-  gap: 110px;
+  justify-self: center;
+  max-width: 1500px;
+  gap: 150px;
+  padding: 20px 20px;
 }
 
 .banner_2 .imagem {
@@ -162,43 +162,6 @@ button {
 
 .banner_2 img {
   width: 500px;
-  display: block;
-}
-
-.banner_2 .texto {
-  margin-left: 40px;
-  max-width: 35ch;
-}
-
-.imagem-Dois {
-  gap: 100px;
-}
-
-
-/*[BANNER 3]*/
-
-.banner_3 {
-  display: grid;
-  align-items: center;
-  justify-self: center;
-  text-align: center;
-  margin: 70px auto 0px auto;
-  max-width: 1800px;
-  height: 600px;
-  padding: 30px 0px;
-}
-
-.container-images-banner3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 40px;
-  align-content: center;
-  gap: 150px;
-}
-
-.banner_3 img {
-  width: 220px;
-  display: block;
 }
 
 .imagem {
@@ -207,15 +170,33 @@ button {
   display: grid;
 }
 
-.fundo {
-  height: 400px;
+.banner_2 .texto {
+  padding: 20px 20px;
+  margin: 20px 20px;
+
+  padding-right: 100px;
 }
+
+.imagem-Dois {
+  gap: 100px;
+  align-items: center;
+}
+
+
+.imagem-Dois img{
+ justify-self: center;
+}
+
+.banner_2 p {
+  font-size: 1rem;
+}
+
 
 .smile {
   position: absolute;
   z-index: 2;
-  height: 180px;
-  top: 108px;
+  height: 190px;
+  top: 100px;
 }
 
 .detail {
@@ -225,17 +206,107 @@ button {
   top: 90px;
 }
 
+button {
+  background-color: #5f67d4;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+#explorar {
+    padding: 10px 10px;
+    margin: 15px 15px;
+}
+
+#botao {
+    padding: 10px 10px;
+    margin: 15px 15px;
+}
+
+.botao:hover {
+  background-color: #4ba2e9;
+}
+
+
+
+/*[BANNER 3]*/
+
+.banner_3 {
+  text-align: center;
+  margin: 50px auto 0px auto;
+  max-width: 1465px;
+}
+
+.container-images-banner3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 30px;
+  display: grid;
+  align-items:flex-start;
+  justify-self: center;
+  max-width: 1000px;
+  padding: 20px 20px;
+}
+
+.banner_3 img {
+  width: 220px;
+  display: block;
+}
+
+.banner_3 h2 {
+  margin-top: 60px;
+}
+
+.fundo {
+  height: 400px;
+}
+
+.imagem-fone img{
+  width: 245px;
+  display: block;
+}
 
 /*[BANNER 4]*/
 
 .banner_4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  max-width: 1800px;
-  gap: 150px;
+  justify-self: center;
+  max-width: 1500px;
+  gap: 10px;
+  background-color: #ece8fd;
+  border-color: #2b3e56 1px solid;
+  padding: 20px 20px;
+}
+
+.banner_4 img {
+  width: 650px;
+}
+
+.banner_4 .imagem {
+  justify-items: right;
+}
+
+.banner_4 .texto {
+  padding: 20px 20px;
+  margin: 20px 20px;
+  padding-right: 120px;
+}
+
+.banner_4 .texto h2 {
+  margin-left: 15px;
+}
+
+.banner_4 .texto p {
+  margin-left: 15px;
 }
 
 /*[BANNER 5]*/
@@ -243,20 +314,26 @@ button {
 .banner_5 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  justify-self: center;
-  max-width: 1800px;
-  gap: 150px;
+  max-width: 1465px;
+  gap: 10px;
+  padding: 20px 20px;
 }
 
 .banner_5 .texto {
-  margin-left: 30px;
-  max-width: 35ch;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  padding-left:40px;
+  padding-right: 40px;
 }
 
 .banner_5 img {
-  width: 580px;
+  width: 500px;
+}
+
+.banner_5 .imagem {
+  justify-content: left;
 }
 
 
@@ -264,6 +341,7 @@ button {
 
 .footer {
   margin-top: 100px;
+  background-color: #f5f5f5;
 }
 
 .footer-container {
@@ -277,7 +355,7 @@ button {
   border-bottom: 2px solid #4ba2e9;
   flex-wrap: nowrap;
   gap: 40px;
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 .footer-container h3 {
@@ -356,4 +434,8 @@ button {
   background-color: #4ba2e9;
 }
 
-
+ #btn-mobile img {
+    width: 30px; 
+    height: auto; 
+    transition: 3s ease-in;
+}

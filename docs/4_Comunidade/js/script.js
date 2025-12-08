@@ -72,3 +72,15 @@ const countdownInterval = setInterval(function() {
         document.getElementById("countdown-timer").innerHTML = "<h4>A contagem regressiva terminou!</h4>";
     }
 }, 1000); 
+
+
+//menu hamburguer
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
+}
+
+btnMobile.addEventListener('click', toggleMenu);

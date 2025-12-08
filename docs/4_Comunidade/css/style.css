@@ -25,6 +25,7 @@ img {
 
 h1{
   color: #2b3e56;
+    font-size:2rem;
 }
 
 h2,
@@ -42,21 +43,21 @@ p {
 }
 
 .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*[NAVIGATION MENU]*/
 
 .container-header {
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 header {
   left: 0;
   top: 0;
   z-index: 1000;
-  background-color: #ece8fd;
+  background-color: #f5f5f5;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -64,11 +65,12 @@ header {
 
 .navegacao {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  height: 50px;
 }
 
 .menu {
@@ -76,11 +78,15 @@ header {
   gap: 40px;
 }
 
-
-.navegacao img {
-  max-width: 250px;
+.navegacao ul {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+
+.navegacao img {
+  max-width: 220px;
+}
 .uai {
   margin-top: 30vh;
 }
@@ -88,7 +94,7 @@ header {
 .menu a {
   color: #2b3e56;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .menu a:hover {
@@ -104,25 +110,43 @@ header {
 .banner_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   align-items: center;
-  max-width: 1800px;
-  gap: 110px;
-  background-color: #ece8fd;
+  max-width: 1500px;
+  gap: 50px;
+  padding: 20px 20px;
+  height: 600px;
 }
 
 .banner_1 .texto {
   align-self: center;
-  width: 450px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  max-width: 400px;
+  min-width: 300px;
 }
 
-.banner_1 p {
-  padding: 10px 0;
-}
+
 
 .banner_1 img {
   max-width: 100%;
   width: 600px;
+}
+
+
+
+/*[BANNER 2]*/
+
+.banner_2 {
+  align-items: center;
+  margin: 50px auto 0px auto;
+  max-width: 1500px;
+  min-width: 700px;
+  height: 700px;
+  align-items: center;
+  padding: 60px;
+  color: #2b3e56;
+  background-color: #ece8fd;
 }
 
 button {
@@ -148,17 +172,7 @@ section {
   margin: 0px auto;
 }
 
-.banner_2 {
-  align-items: center;
-  margin: 0 auto;
-  height: 700px;
-  max-width: 1900px;
-  min-width: 700px;
-  align-items: center;
-  padding: 60px;
-  color: #2b3e56;
-  background-color: #ece8fd;
-}
+/*[BANNER 3]*/
 
 .container3 {
   height: 544px;
@@ -168,9 +182,9 @@ section {
   background-color: #f4f2ff;
   justify-items: center;
   border-radius: 40px;
-  margin-top: 80px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
+  gap: 10px;
+
 }
 
 .textoo1 p {
@@ -216,7 +230,6 @@ section {
   border-radius: 15px;
   font-size: 1rem;
   padding-left: 20px;
-  border: #8087f2 1px solid;
 }
 
 .formu label {
@@ -238,11 +251,9 @@ section {
 }
 
 .container4 {
-  height: 800px;
   background-color: #f4f2ff;
   border-radius: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
 }
 
 .textoo2 {
@@ -253,9 +264,10 @@ section {
 .bta {
   display: flex;
   gap: 40px;
-  margin: 0 auto;
-  padding: 0 30px;
-  width: 80%;
+  height:320px;
+  padding: 10px 80px;
+  justify-content: center;
+
 }
 
 .bta img {
@@ -264,24 +276,24 @@ section {
 }
 
 .bta1 p {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .bta1 {
-  width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 15px;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
   margin-top: 30px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .btaa2 p {
-  text-align: center;
+  text-align: left;
 }
 
 .btaa2 {
@@ -289,20 +301,21 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
 }
 
 .btaa {
   display: flex;
   justify-content: center;
-  width: 160px;
-  height: 44px;
+  width: 115px;
+  height: 35px;
   background-color: #8087f2;
   border-radius: 15px;
 }
 
 .btaa a {
   color: #fff;
-  font-size: 24px;
+  font-size: 1rem;
   align-self: center;
 }
 
@@ -310,8 +323,6 @@ section {
   border-radius: 40px;
   background-color: #f4f2ff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
-  width: 100%;
 }
 
 .textoo3 {
@@ -327,15 +338,13 @@ section {
 }
 
 .quadrado2 {
-  width: 77%;
-  height: 600px;
   justify-self: center;
   background-color: #fff;
   border-radius: 20px;
-  margin-bottom: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
   margin-top: 30px;
+  padding: 20px 140px;
+  margin: 50px 50px;
 }
 
 .quadrado {
@@ -344,7 +353,6 @@ section {
   height: 185px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  border: #8087f2 1px solid;
   margin-top: 30px;
 }
 
@@ -390,7 +398,6 @@ section {
 }
 
 .botassi {
-  margin: 0;
   margin-right: 200px;
   height: 60px;
   padding: 3px 50px;
@@ -398,8 +405,7 @@ section {
   justify-self: end;
   background-color: #8087f2;
   border-radius: 15px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 70px 30px;
 }
 
 .botassin {
@@ -426,7 +432,6 @@ section {
 .cent {
   text-align: center;
   margin-top: 250px;
-  margin-bottom: 100px;
 }
 
 .plano {
@@ -457,22 +462,44 @@ section {
   align-self: flex-end;
 }
 
+.banner_planos {  
+  align-items: center;
+  margin: 10px auto 0px auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.plano-botao3 {
+  border: solid 1px black;
+  padding: 20px;
+  margin-top: 60px;
+}
+
 .planodois {
   margin: 0px auto;
-  max-width: 1800px;
-  margin-bottom: 20px;
+  max-width: 1500px;
+  margin: 0px auto 0px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .tudo {
-  padding: 40px;
-  width: 350px;
+  padding: 20px;
+  width: 300px;
   background-color: #f4f2ff;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  height: 550px;
+  gap: 40px;
 }
+
+.major ul li{
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 .major {
   padding-top: 10px;
 }
@@ -488,6 +515,9 @@ section {
   text-align: left;
 }
 
+.tudo h6{
+  margin: 0;
+}
 .tudo p,
 h6,
 h3 {
@@ -501,8 +531,8 @@ h3 {
 
 .bhj {
   margin: 0px auto;
-  width: 282px;
-  height: 60px;
+  width: 272px;
+  height: 50px;
   background-color: #8087f2;
   display: flex;
   justify-content: center;
@@ -516,21 +546,27 @@ h3 {
   color: #fff;
 }
 
-.bhjpai {
-  margin: 0 auto;
-  max-width: 1700px;
-  display: flex;
-  margin-bottom: 40px;
+.plano-botao1 {
+  border: solid 1px black;
+  padding: 20px;
+  margin-top: 80px;
 }
+
+.plano-botao2 {
+  border: solid 1px black;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
 
 .banner_3 {
   align-items: center;
-  margin: 0 auto;
-  max-width: 1800px;
-  height: 750px;
+  margin: 50px auto 0px auto;
+  max-width: 1500px;
   align-items: center;
-  padding: 60px;
-  background-color: #ece8fd;
+  padding: 20px 20px;
+  gap: 10px;
 }
 
 .majorp {
@@ -540,11 +576,11 @@ h3 {
 
 .banner_4 {
   align-items: center;
-  margin: 0 auto;
-  height: 1100px;
-  max-width: 1800px;
-  padding: 60px;
+  margin: 80px auto 0px auto;
+  max-width: 1500px;
+  padding: 20px 20px;
   background-color: #ece8fd;
+  gap: 10px;
 }
 
 .banner_5 {
@@ -552,14 +588,27 @@ h3 {
   margin: 0 auto;
   background-color: #e6fcfe;
   height: 600px;
-  max-width: 1800px;
+  max-width: 1500px;
   align-items: center;
   padding: 60px;
 }
 
+
+.tam {
+  max-width: 1500px;
+  margin: 10px auto 0px auto;
+  align-items: center;
+}
+
+.cent{
+  max-width: 1500px;
+  margin: 30px auto 0px auto;
+  align-items: center;
+  }
+
+
 .footer {
-  background-color: #ece8fd;
-  max-width: 1800px;
+  background-color: #f5f5f5;
   margin: 0 auto;
 }
 
@@ -573,7 +622,7 @@ h3 {
   font-family: 'Inter', sans-serif;
   border-bottom: 2px solid #4ba2e9;
   gap: 40px;
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 .footer-container h3 {

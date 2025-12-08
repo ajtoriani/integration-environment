@@ -34,3 +34,14 @@ gsap.from(".container .container-images-banner3", {
   delay:5
 });
 
+
+//menu hamburguer
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
+}
+
+btnMobile.addEventListener('click', toggleMenu);

@@ -1,4 +1,4 @@
-gsap.from(".menu", {
+gsap.from(".menu #btn-mobile", {
   opacity: 0,
   y: 20,
   duration: 1,
@@ -52,4 +52,15 @@ gsap.to(gira, {
   ease:"none"
 })
 
+
+//menu hamburguer
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
 
