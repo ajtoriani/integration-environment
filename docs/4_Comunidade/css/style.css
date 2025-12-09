@@ -105,6 +105,7 @@ header {
   text-decoration: underline;
 }
 
+
 /*[BANNER 1]*/
 
 .banner_1 {
@@ -908,4 +909,31 @@ button {
 
 #botao:hover {
   background-color: #5f67d4;
+}
+
+
+#btn-mobile{
+  display: none;
+}
+
+#menu-mobile{
+  display: none;
+}
+
+#btn-mobile{
+   background-color: #5f67d4;
+  color: white;
+  border-radius: 8px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+ #btn-mobile img {
+    width: 30px; 
+    height: auto; 
+   
 }

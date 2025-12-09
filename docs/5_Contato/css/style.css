@@ -106,30 +106,7 @@ header {
   text-decoration: underline;
 }
 
-#btn-mobile{
-  display: none;
-}
 
-#menu-mobile{
-  display: none;
-}
-
-#btn-mobile{
-   background-color: #5157ba;
-  color: white;
-  border-radius: 8px;
-  height: 50px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
- #btn-mobile img {
-    width: 30px; 
-    height: auto; 
-}
 
 /*[BANNER 1]*/
 
@@ -405,4 +382,29 @@ textarea {
 
 #botao:hover {
   background-color: #5f67d4;
+}
+
+#btn-mobile{
+  display: none;
+}
+
+#menu-mobile{
+  display: none;
+}
+
+#btn-mobile{
+   background-color: #5157ba;
+  color: white;
+  border-radius: 8px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ #btn-mobile img {
+    width: 30px; 
+    height: auto; 
 }

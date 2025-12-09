@@ -47,6 +47,11 @@ p {
   padding-right: 20px;
 }
 
+.userway_buttons_wrapper{
+  top: 0px;
+  right: -90px;
+}
+
 /*[NAVIGATION MENU]*/
 
 .container-header {

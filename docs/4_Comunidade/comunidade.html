@@ -23,7 +23,7 @@
     
 <!--T1.1 = START [NAVIGATION MENU]-->
 
-    <header>
+    <header id="header">
         <div class="navegacao">
           <div class="logo">
             <a href="../index.html"
@@ -31,8 +31,19 @@
             /></a>
           </div>
           
-          <nav>
+          <nav id="menu">
+            <button id="btn-mobile" class="hamburguer"> <img src="./img/menu.svg" alt=""></button>
             <ul class="menu">
+              <li>
+                <a href="../index.html">Início</a>
+              </li>
+              <li><a href="../2_Sobre/sobre.html">Sobre</a></li>
+              <li><a href="../3_Recursos/recursos.html">Recursos</a></li>
+              <li>  <span class="inicio-linha"
+                  > <a href="./comunidade.html">Comunidade</a> </span></li>
+              <li><a href="../5_Contato/contato.html">Contato</a></li>
+            </ul>
+            <ul id="menu-mobile">
               <li>
                 <a href="../index.html">Início</a>
               </li>
@@ -70,6 +81,7 @@
   <section>
             <div class="container">
                 <div class="banner_4">
+
                     <section>
                         <div class="container5">
                             <div class="textoo3">
@@ -87,36 +99,36 @@
                                 </div>
                                 <div class="quadrado">
                                     <div class="quad">
-                                        <img src="./img/comunidade_banner4.3.png" alt="">
+                                        <img src="./img/comunidade_banner4.2.png" alt="">
                                         <p><strong>Mentorias</strong></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="quadrado2">
                                 <div class="quadtu">
-                                    <img src="./img/comunidade_banner4.2.png" alt="">
+                                    <img src="./img/comunidade_banner4.3.png" alt="">
                                     <p><strong>Eventos</strong></p>
                                 </div>
                                 <div class="quadti">
                                     <img src="./img/logo-respire-transp (1) 1.svg" alt="">
-                                    <p>Saúde Mental e Inteligência Artificial: Desafios e Oportunidades</p>
+                                    <p>A Saúde Mental e a Inteligência Artificial: Desafios e Oportunidades</p>
                                     <img src="./img/imagem4.svg" alt="">
                                 </div>
-                                <div class="containerto">
+                                <div class="containerto" id="countdown-timer">
                                     <div class="pto">
-                                        <h4>25</h4>
+                                        <h4 id="days">25</h4>
                                         <p>Dias</p>
                                     </div>
                                     <div class="pto">
-                                        <h4>05</h4>
+                                        <h4 id="hours">05</h4>
                                         <p>Horas</p>
                                     </div>
                                     <div class="pto">
-                                        <h4>00</h4>
+                                        <h4 id="minutes">00</h4>
                                         <p>Minutos</p>
                                     </div>
                                     <div class="pto">
-                                        <h4>28</h4>
+                                        <h4 id="seconds">28</h4>
                                         <p>Segundos</p>
                                     </div>
                                 </div>
@@ -129,7 +141,7 @@
 
                 </div>
             </div>
-            </section>
+        </section>
 
 <section>
             <div class="container">
