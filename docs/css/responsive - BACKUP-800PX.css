@@ -9,6 +9,7 @@
     gap: 60px;
     justify-items: center;
     min-height: 700px;
+    border: solid 4px black;
 justify-content: space-between;
 padding: 0;
 
@@ -21,6 +22,7 @@ padding: 0;
     font-size: 2rem;
     text-align: center;
     margin-top: 50px;
+        border: solid 4px black;
   }
 }
 
@@ -48,6 +50,7 @@ padding: 0;
   .banner_2 .texto{
     margin: 0;
     padding: 0;
+    border: solid 4px black;
     padding-right: 0px;
   }
 }
@@ -305,19 +308,18 @@ padding: 0;
   }
 }
 
-@media (max-width: 500px) {
-  .banner_1 h1{
-    display: none;
+@media (max-width: 800px) {
+  .banner_1 .texto h1{
+    font-size: 1.6rem;
   }
 }
 
-@media (max-width: 500px) {
-  .banner_1 .texto{
-    margin-left: 15px;
-    max-width: 30ch;
-    text-align: center;
+@media (max-width: 800px) {
+  .banner_1 .texto p{
+    font-size: 1.2rem;
   }
 }
+
 @media (max-width: 800px) {
   .banner_2 .texto p{
     font-size: 1.2rem;
@@ -357,7 +359,7 @@ padding: 0;
     max-width: 750px;
     margin: 50px auto 0px auto;
     gap: 5px;
-    min-height: 550px;
+    height: 550px;
     margin-top: 0;
   }
 }
@@ -406,7 +408,7 @@ padding: 0;
     max-width: 750px;
     margin: 50px auto 0px auto;
     gap: 5px;
-    min-height: 1000px;
+    height: 500px;
     margin-top: 0;
   }
 }

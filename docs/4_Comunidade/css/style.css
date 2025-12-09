@@ -123,7 +123,6 @@ header {
   padding: 20px 20px;
   margin: 20px 20px;
   max-width: 400px;
-  min-width: 300px;
 }
 
 
@@ -167,7 +166,7 @@ button {
 /*[BANNER 3]*/
 
 .container3 {
-  height: 544px;
+  height: 450px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
@@ -187,6 +186,7 @@ button {
 
 .textoo1 {
   padding: 40px;
+  width: 300px;
 }
 
 .textoo1 h3 {
@@ -211,11 +211,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    gap: 10px;
+    gap: 5px;
 
 }
 .cadastro p {
-  font-size:0.7rem;
+  font-size:0.8rem;
 }
 
 .cadastro button {

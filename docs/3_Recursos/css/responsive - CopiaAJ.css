@@ -31,25 +31,16 @@
 @media (max-width: 500px) {
   .banner_1 {
     grid-template-columns: 1fr; /* vira 1 coluna */
-    margin: 50px auto 0 auto;
-    height: 600px;
+    margin: 10px auto 0 auto;
+    height: 800px;
     gap: 10px;
-    max-width: 750px;
+    justify-items: center;
   }
 }
 
 @media (max-width: 500px) {
   .banner_1 h1{
-        font-size: 2rem;
-    text-align: center;
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 500px) {
-  .banner_1 .texto{
-    padding: 0;
-    margin: 0;
+    display: none;
   }
 }
 
@@ -58,12 +49,6 @@
     margin-left: 15px;
     max-width: 30ch;
     text-align: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .banner_1 p{
-    display: none;
   }
 }
 
@@ -84,8 +69,7 @@
 
 @media (max-width: 500px) {
 .banner_1 img{
-  width: 350px;
-  margin-left: 0;
+  width: 380px;
   }
 }
 
