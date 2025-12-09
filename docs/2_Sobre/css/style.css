@@ -140,14 +140,12 @@ header {
 .banner_1 img {
   max-width: 100%;
   width: 500px;
-  
 }
 
 .imagem {
   position: relative;
   justify-items:left;
   display: grid;
-  border: 1px solid black;
 }
 
 .fundo {
@@ -200,7 +198,6 @@ header {
 }
 
 .banner_2 .imagem p {
-  border: 1px solid black;
   margin: 0;
 }
 
@@ -254,6 +251,11 @@ header {
   min-width: 400px;
 }
 
+.banner_3 .texto p {
+  font-size: 1.3rem;
+}
+
+
 
 
 /*[FOOTER]*/
@@ -271,7 +273,7 @@ header {
   color: #505050;
   padding-top: 60px;
   font-family: 'Inter', sans-serif;
-  border-bottom: 2px solid #4ba2e9;
+  border-bottom: 2px solid #5f67d4;
   flex-wrap: nowrap;
   gap: 40px;
   max-width: 1500px;

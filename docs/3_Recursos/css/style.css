@@ -140,6 +140,7 @@ header {
 .banner_1 img {
   max-width: 500px;
   display: block;
+    margin-left: 100px;
 }
 
 .banner_1 .img-comunidade {
@@ -402,7 +403,7 @@ p {
   color: #505050;
   padding-top: 60px;
   font-family: 'Inter', sans-serif;
-  border-bottom: 2px solid #4ba2e9;
+  border-bottom: 2px solid #5f67d4;
   flex-wrap: nowrap;
   gap: 40px;
   max-width: 1500px;
