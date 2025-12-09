@@ -122,7 +122,7 @@ header {
   margin: 80px auto 0px auto;
   align-items: center;
   max-width: 1500px;
-  gap: 110px;
+  gap: 90px;
   background-color: #ece8fd;
   border-color: #2b3e56 ;
   padding: 20px 20px;
@@ -140,13 +140,14 @@ header {
 .banner_1 img {
   max-width: 100%;
   width: 500px;
-  margin-top: 20px;
+  
 }
 
 .imagem {
   position: relative;
-  justify-items:right;
+  justify-items:left;
   display: grid;
+  border: 1px solid black;
 }
 
 .fundo {
@@ -198,12 +199,16 @@ header {
   justify-items: center;
 }
 
+.banner_2 .imagem p {
+  border: 1px solid black;
+  margin: 0;
+}
+
 .agrupamento {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   justify-items: center;
-  margin: 80px auto 0px auto;
   padding: 20px 20px;
 }
 
@@ -212,10 +217,15 @@ header {
 }
 .titulo {
   display: flex;
-justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    gap: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.titulo h2 {
+  margin: 0;
 }
 
 .agrupamento p {

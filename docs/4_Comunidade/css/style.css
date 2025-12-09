@@ -116,7 +116,6 @@ header {
   gap: 50px;
   padding: 20px 20px;
   height: 600px;
-    border: solid 1px black;
 }
 
 .banner_1 .texto {
@@ -146,25 +145,23 @@ header {
   height: 700px;
   align-items: center;
   padding: 40px;
-  border: solid 1px black;
 }
 
 button {
-  background-color: #5f67d4;
+  background-color: #5157ba;
   border-radius: 8px;
   width: 240px;
   height: 50px;
   color: white;
   border: none;
   font-size: 20px;
-  font-weight: bold;
   margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 #botao:hover {
-  background-color: #4ba2e9;
+  background-color: #5f67d4;
 }
 
 /*[BANNER 3]*/
@@ -184,39 +181,72 @@ button {
 
 .textoo1 p {
   font-size: 1rem;
-  max-width: 35ch;
+  max-width: 400px;
+
+}
+
+.textoo1 {
+  padding: 40px;
+}
+
+.textoo1 h3 {
+    margin: 0;
 }
 
 .botao {
-  margin: 0;
-  height: 60px;
-  background-color: #8087f2;
-  border-radius: 15px;
+  margin: 0px auto;
+  width: 240px;
+  height: 35px;
+  background-color: #5157ba;
   display: flex;
-  justify-self: left;
-  margin-left: 100px;
-  margin-top: 45px;
-  padding: 5px 20px;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+  padding: 5px 5px;
+  display: none;
 }
 
-.botaoum {
-  width: 199px;
-  height: 60px;
-  background-color: #8087f2;
-  border-radius: 15px;
-  border: none;
-  color: #fff;
-  font-size: 24px;
+
+.cadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    gap: 10px;
+
 }
+.cadastro p {
+  font-size:0.7rem;
+}
+
+.cadastro button {
+    align-items: center;
+    text-align: center;
+      font-size: 0.9rem;
+        width: 140px;
+  height: 35px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+      border-radius: 15px;
+  background-color: #5157ba;
+}
+
+.cadastro button:hover{
+  transition: transform 0.2s ease;
+}
+
+.cadastro button:hover{
+    transform: scale(1.05);
+
+}
+
 
 .botao a {
+  font-size: 0.9rem;
   color: #fff;
-  font-size: 24px;
-  align-self: center;
+
 }
 
 .formu {
-  margin-top: 80px;
+  padding: 50px 50px;
 }
 
 .ue {
@@ -225,25 +255,24 @@ button {
   border-radius: 15px;
   font-size: 1rem;
   padding-left: 20px;
+  background-color: #ece8fd;
+  border: none;
 }
 
 .formu label {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: #2b3e56;
 }
 
-.bot1 {
-  margin-top: 25px;
-  display: grid;
-  justify-content: end;
-  text-decoration: none;
-}
 
 .bot {
   margin: 0;
   width: 199px;
   height: 60px;
-  background-color: #8087f2;
+  background-color: #5157ba;
 }
+
+
 
 .container4 {
   border-radius: 40px;
@@ -305,6 +334,7 @@ button {
   flex-direction: column;
   gap: 15px;
   align-items: center;
+
 }
 
 .btaa {
@@ -312,8 +342,16 @@ button {
   justify-content: center;
   width: 115px;
   height: 35px;
-  background-color: #8087f2;
+  background-color: #5157ba;
   border-radius: 15px;
+}
+
+.btaa {
+  transition: transform 0.2s ease;
+}
+
+.btaa:hover {
+  transform: scale(1.05); /* aumenta 5% */
 }
 
 .btaa a {
@@ -325,7 +363,10 @@ button {
 .container5 {
   border-radius: 40px;
   height: 1100px;
+  background-color: #f4f2ff;
 }
+
+
 
 .textoo3 {
   text-align: center;
@@ -353,14 +394,14 @@ button {
   justify-self: center;
   border-radius: 20px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
-  padding: 40px 100px;
+  padding: 40px 10px;
   margin: 10px 10px;
-  background-color: #f4f2ff;
+  background-color: #ece8fd;
 }
 
 .quadrado {
-  background-color: #f4f2ff;
-  width: 500px;
+  background-color: #ece8fd;
+  width: 400px;
   height: 200px;
   border-radius: 20px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
@@ -374,10 +415,27 @@ button {
   justify-items: center;
 }
 
+
+.quad img {
+  transition: transform 0.2s ease;
+}
+
+.quad img:hover {
+  transform: scale(1.10); /* aumenta 5% */
+}
+
 .quadtu {
 
   text-align: center;
   justify-items: center;
+}
+
+.quadtu img {
+  transition: transform 0.2s ease;
+}
+
+.quadtu img:hover {
+  transform: scale(1.10); /* aumenta 5% */
 }
 
 .quadti {
@@ -413,7 +471,7 @@ button {
   padding: 3px 50px;
   display: flex;
   justify-self: end;
-  background-color: #8087f2;
+  background-color: #5157ba;
   border-radius: 15px;
   margin: 70px 30px;
   display: none;
@@ -453,7 +511,6 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .plano p {
@@ -472,7 +529,7 @@ button {
   justify-content: center;
   width: 64px;
   height: 28px;
-  background-color: #8087f2;
+  background-color: #5157ba;
   border-radius: 100px;
 }
 
@@ -491,15 +548,20 @@ button {
   padding: 20px;
 }
 
+
+.botaoum {
+  margin-top: 0;
+}
+
 .plano-botao3 {
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .planodois {
-  margin: 0px auto;
   max-width: 1000px;
-  margin: 0px auto 0px auto;
+  margin: 10px auto 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -513,14 +575,14 @@ button {
   background-color: #f4f2ff;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-  height: 280px;
+  height: 330px;
   gap: 40px;
 }
 
 
 .major ul li{
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #2b3e56;
   text-align: left;
 }
@@ -550,37 +612,52 @@ button {
 
 .tudo p {
   color: #505050;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: center;
+  margin-top: 5px;
 }
 
 .bhj {
   margin: 0px auto;
-  width: 220px;
+  width: 240px;
   height: 35px;
-  background-color: #8087f2;
+  background-color: #5157ba;
   display: flex;
   justify-content: center;
   border-radius: 15px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+
+}
+
+
+.plano-botao3 {
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
 }
 
 .bhj a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   align-self: center;
   color: #fff;
 }
 
 .plano-botao1 {
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .plano-botao2 {
-  padding: 10px;
-  margin-top: 5px;
+  padding: 5px;
+  margin-top: 8px;
 }
 
+.plano-botao3 {
+  padding: 5px;
+  margin-top: 45px;
+}
 
 .banner_3 {
   align-items: center;
@@ -592,17 +669,17 @@ button {
 }
 
 .majorp {
-  font-size: 5rem;
   font-weight: bold;
+  margin: 5px;
 }
 
 .banner_4 {
   align-items: center;
-  margin: 40px auto 0px auto;
+  margin: 20px auto 0px auto;
   max-width: 1500px;
   background-color: #ece8fd;
   gap: 10px;
-  padding: 40px 40px;
+  padding: 20px 20px;
 }
 
 .banner_5 {
@@ -613,12 +690,13 @@ button {
   max-width: 1500px;
   align-items: center;
   padding: 60px;
+  border: 1px solid black;
 }
 
 
 .tam {
   max-width: 1500px;
-  margin: 10px auto 0px auto;
+  margin: 0px auto 0px auto;
   align-items: center;
 }
 
@@ -642,7 +720,7 @@ button {
   color: #505050;
   padding-top: 60px;
   font-family: 'Inter', sans-serif;
-  border-bottom: 2px solid #4ba2e9;
+  border-bottom: 2px solid #5f67d4;
   gap: 40px;
   max-width: 1500px;
 }
@@ -721,7 +799,7 @@ button {
 }
 
 #botao:hover {
-  background-color: #4ba2e9;
+  background-color: #5f67d4;
 }
 
 .cont {
@@ -757,7 +835,7 @@ button {
 }
 
 #botao:hover {
-  background-color: #4ba2e9;
+  background-color: #5f67d4;
 }
 
 .cont {
@@ -793,7 +871,7 @@ button {
 }
 
 #botao:hover {
-  background-color: #4ba2e9;
+  background-color: #5f67d4;
 }
 
 .cont {
@@ -829,5 +907,5 @@ button {
 }
 
 #botao:hover {
-  background-color: #4ba2e9;
+  background-color: #5f67d4;
 }
