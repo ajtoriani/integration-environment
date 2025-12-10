@@ -549,4 +549,8 @@ margin-top: 70px;
         border-left: 4px solid #5f67d4; 
         display: block;
     }
+
+    .footer{
+    display: none;
+  }
 }

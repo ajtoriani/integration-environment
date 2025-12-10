@@ -328,11 +328,14 @@
   .footer-container {
     display: none;
   }
+
+  .footer{
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
   .cont {
     display: block;
   }
-
 }

@@ -229,5 +229,9 @@
   .cont {
     display:none;
   }
+
+  .footer{
+    display: none;
+  }
 }
 

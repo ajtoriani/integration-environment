@@ -451,3 +451,76 @@ button {
     height: auto; 
     transition: 3s ease-in;
 }
+
+.footerResponsivo {
+    margin-top: 50px;
+    background-color: #F5F5F5;
+    padding: 20px 0px;
+    width: 100vw;
+  }
+
+
+.footerResponsivo * {
+    margin: 0;
+    padding: 0;
+  }
+
+.footerGrid {
+    display: grid;
+    grid-template-rows: 1fr 1.25fr 0.5fr;
+    height: fit-content;
+    align-items: center;
+  }
+
+.logoMarca {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-left: 16px;
+      gap: 15px;
+  }
+
+.logoMarca h2 {
+    font-size: 1.5rem;
+  }
+
+.logoImagem {
+    width: 80px;
+  }
+
+.logoImagem img {
+    width: 100%;
+  }
+
+.redesSociais {
+    display: grid;
+  }
+
+.redesSociais ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+.tamanhoImagemIcones {
+    height: 35px;
+  }
+
+.iconesRedes img {
+    height: 100%;
+  }
+
+.infoCalmamente {
+    width: 100vw;
+    text-align: center;
+  }
+
+.infoCalmamente p {
+    font-size: 0.7rem;
+    margin: 0px 15px;
+  }
+
+.toggleFooterResponsivo {
+    display: none;
+  }

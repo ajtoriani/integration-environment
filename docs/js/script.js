@@ -64,3 +64,20 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu);
 
+
+const footerResponsivo = document.getElementById('footerResponsivo');
+
+// Esta função roda quando o tamanho da tela muda
+window.addEventListener('resize', () => {
+  // Essa variavel pega o tamanho da tela atualizado
+  let tamanhoTela = window.innerWidth;
+  /* Esta condicional verifica se o tamanho da tel da variavel tamanhoTela é menor que o desejado para então adicionar ou remover uma classe */
+  if (tamanhoTela < 500) {
+    // Se for menor que o tamanho escolhido ele remove a classe que está com display:none (esconder)
+    footerResponsivo.classList.remove('toggleFooterResponsivo');
+  } else {
+    // Se não for menor que o tamanho escolhido ele adiciona a classe com display: none
+    footerResponsivo.classList.add('toggleFooterResponsivo');
+  }
+  /* Ou seja, esse código diz que se o tamanho da tela for menor que X, ele irá mostrar o footer responsivo, e se for maior ele remove. */
+})
